@@ -38,7 +38,14 @@ class virtualmin_remote_api {
         return false;
     }
 
-    public function add_domain(array $params = array()) {
+    /**
+     * example of basic @param usage
+     * @param array $params required keys: domain, pass
+     * @param array $options required at least one option - unix, dir, webmin, web, dns, mail, limits-from-plan
+
+     * @return mixed
+     */
+    public function add_domain(array $params = array(), array $options = arary()) {
         $required = array(
             'domain',
             'pass',
