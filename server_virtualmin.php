@@ -45,7 +45,7 @@ class virtualmin_remote_api {
 
      * @return mixed
      */
-    public function add_domain(array $params = array(), array $options = arary()) {
+    public function add_domain(array $params = array()) {
         $required = array(
             'domain',
             'pass',
