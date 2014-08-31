@@ -40,8 +40,7 @@ class virtualmin_remote_api {
 
     /**
      * example of basic @param usage
-     * @param array $params required keys: domain, pass
-     * @param array $options required at least one option - unix, dir, webmin, web, dns, mail, limits-from-plan
+     * @param array $params required keys: domain, pass, and at least one option: unix, dir, webmin, web, dns, mail, limits-from-plan
 
      * @return mixed
      */
